@@ -21,7 +21,10 @@
     <title>Museum 0f Candy</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md py-0 fixed-top" id="mainNavbar">
+    <nav
+      class="navbar navbar-expand-md py-0 fixed-top scrolled"
+      id="mainNavbar"
+    >
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Candy</a>
         <button
@@ -80,9 +83,80 @@
         <div class="col-md-6 order-2 order-md-1">
           <img src="/imgs/milk.png" alt="An image of milk" class="img-fluid" />
         </div>
+        <div class="col-md-6 text-center order-1 order-md-1">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 blur mb-5 mb-md-0">
+              <h2>Museum Of Candy</h2>
+              <img
+                src="/imgs/lolli_icon.png"
+                alt="An icon of lolly"
+                class="d-none d-lg-inline"
+              />
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Architecto dolor earum itaque consectetur, hic fugiat assumenda
+                et ea quas sequi quod praesentium asperiores! Numquam sit,
+                maiores ipsam at corporis praesentium.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="row align-items-center content"></div>
-      <div class="row align-items-center content"></div>
+      <div class="row align-items-center content">
+        <div class="col-md-6 order-2 order-md-2">
+          <img
+            src="/imgs/gumball.png"
+            alt="An image of gumball"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-6 text-center order-1 order-md-1">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 blur mb-5 mb-md-0">
+              <h2>Museum Of Candy</h2>
+              <img
+                src="/imgs/lolli_icon.png"
+                alt="An icon of lolly"
+                class="d-none d-lg-inline"
+              />
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Architecto dolor earum itaque consectetur, hic fugiat assumenda
+                et ea quas sequi quod praesentium asperiores! Numquam sit,
+                maiores ipsam at corporis praesentium.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center content">
+        <div class="col-md-6 order-2 order-md-1">
+          <img
+            src="/imgs/sprinkles.png"
+            alt="An image of sprinkles"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-6 text-center order-1 order-md-2">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 blur mb-5 mb-md-0">
+              <h2>Museum Of Candy</h2>
+              <img
+                src="/imgs/lolli_icon.png"
+                alt="An icon of lolly"
+                class="d-none d-lg-inline"
+              />
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Architecto dolor earum itaque consectetur, hic fugiat assumenda
+                et ea quas sequi quod praesentium asperiores! Numquam sit,
+                maiores ipsam at corporis praesentium.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- JavaScript Bundle with Popper -->
@@ -91,5 +165,13 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $("#mainNavbar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
   </body>
 </html>
