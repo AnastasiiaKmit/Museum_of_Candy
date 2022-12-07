@@ -8,11 +8,6 @@ body {
   font-weight: 100;
 }
 
-.navbar {
-  font-size: 1.5em;
-  padding: 0;
-}
-
 #mainNavbar,
 .navbar-brand {
   color: red;
